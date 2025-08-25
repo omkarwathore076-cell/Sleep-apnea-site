@@ -3,73 +3,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sleep Apnea Treatment – Free Consultation | SomniDental</title>
-<meta name="description" content="Struggling with CPAP? Discover a comfortable, FDA-approved oral appliance therapy. Book a free consultation today.">
+<title>SomniDental • Sleep Apnea Treatment (Oral Appliance) — Free Consultation</title>
+<link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --primary:#2563eb;
-    --primary-2:#0ea5e9;
-    --text:#0f172a;
-    --muted:#475569;
-    --bg:#f8fafc;
-    --card:#ffffff;
-    --success:#22c55e;
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial; color:var(--text); background:var(--bg); }
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-  header { background:#fff; border-bottom:1px solid #e2e8f0; position:sticky; top:0; z-index:10; }
-  .nav { display:flex; align-items:center; justify-content:space-between; height:72px; }
-  .brand { display:flex; align-items:center; gap:12px; }
-  .brand img { height:40px; }
-  .cta-phone { display:flex; align-items:center; gap:12px; }
-  .cta-phone a { color:#fff; background:var(--primary); padding:10px 16px; border-radius:12px; text-decoration:none; font-weight:600; }
-  .cta-phone small { color:var(--muted); display:block; text-align:right; }
-  .hero { background:#eef2ff; position:relative; }
-  .hero::before { content:""; position:absolute; inset:0; background:url('assets/hero.svg') center/cover no-repeat; opacity:1; }
-  .hero .inner { position:relative; z-index:1; display:grid; grid-template-columns: 1.2fr 1fr; gap:28px; padding:48px 0 24px; }
-  .badge { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.7); padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600; }
-  .title { font-size:40px; line-height:1.1; margin:12px 0; color:#0b1220; }
-  .subtitle { font-size:18px; color:#0b1220; opacity:.9; }
-  .trust-row { display:flex; gap:16px; margin-top:18px; flex-wrap:wrap; }
-  .trust { background:rgba(255,255,255,.85); padding:10px 12px; border-radius:12px; font-size:13px; }
-  .card { background:var(--card); border:1px solid #e2e8f0; border-radius:16px; box-shadow: 0 10px 30px rgba(2,6,23,.06); }
-  .form-card { padding:16px; }
-  .form-title { font-size:18px; font-weight:700; margin:8px 0 4px; }
-  .pill { font-size:12px; color:#0f172a; background:#e2e8f0; display:inline-block; padding:4px 10px; border-radius:999px; }
-  .section { padding:48px 0; }
-  .grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; }
-  .feature { background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:18px; }
-  .feature h3 { margin:6px 0 8px; font-size:18px; }
-  .badge-guarantee { display:inline-flex; align-items:center; gap:8px; color:#065f46; background:#ecfdf5; border:1px solid #a7f3d0; padding:8px 12px; border-radius:10px; font-weight:600; }
-  footer { background:#0b1220; color:#cbd5e1; padding:24px 0; margin-top:24px; }
-  .footgrid { display:grid; grid-template-columns:2fr 1fr; gap:20px; }
-  .legal { font-size:12px; color:#94a3b8; }
-  @media (max-width: 900px) {
-    .hero .inner { grid-template-columns: 1fr; }
-    .grid-3 { grid-template-columns: 1fr; }
-    .cta-phone small { display:none; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"SomniDental Sleep Apnea Clinic","telephone":"+1-555-0123","medicalSpecialty":"SleepMedicine","openingHours":"Mo-Sa 08:00-18:00"}
+</script>
 </head>
 <body>
 <header>
   <div class="container nav">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="SomniDental logo"/>
+    <div class="logo-wrap">
+      <img src="assets/logo.svg" alt="SomniDental logo">
       <div>
-        <strong>SomniDental</strong><br/>
-        <small style="color:#64748b">Sleep Apnea Treatment Clinic</small>
+        <div style="font-weight:900; font-size:18px;">SomniDental</div>
+        <div style="color:#64748b; font-size:13px;">Sleep Apnea Treatment Clinic</div>
       </div>
     </div>
-    <div class="cta-phone">
-      <div>
-        <a href="tel:+1-555-0123">Call: +1 (555) 0123</a>
-        <small>Mon–Sat • 8am–6pm</small>
-      </div>
+    <div class="primary-cta">
+      <a href="#form">Book Free Consultation</a>
+      <div class="secondary">Call us<br><strong style="color:#0b1220">+1 (555) 0123</strong></div>
     </div>
   </div>
 </header>
@@ -77,64 +33,82 @@
 <section class="hero">
   <div class="container inner">
     <div>
-      <span class="badge">FDA-Approved Oral Appliance • No CPAP</span>
-      <h1 class="title">Sleep Better with a Comfortable <br/>CPAP Alternative</h1>
-      <p class="subtitle">Custom-fitted oral appliance therapy provided by licensed dental professionals. Safer, quieter, and travel-friendly.</p>
+      <div class="kicker">FDA‑Approved Oral Appliance • No CPAP</div>
+      <h1 class="title">Sleep Better with a Comfortable CPAP Alternative</h1>
+      <p class="subtitle">Custom‑fitted oral appliance therapy provided by licensed dental professionals. Safer, quieter, and travel‑friendly.</p>
       <div class="trust-row">
-        <div class="trust">✔ Free Consultation</div>
-        <div class="trust">✔ Insurance Assistance</div>
-        <div class="trust">✔ Same-Week Appointments</div>
+        <div class="trust">✓ Free Consultation</div>
+        <div class="trust">✓ Insurance Assistance</div>
+        <div class="trust">✓ Same‑Week Appointments</div>
       </div>
-      <div style="margin-top:16px;">
-        <span class="badge-guarantee">🔒 100% Confidential • HIPAA-friendly intake</span>
+      <div class="strap">
+        <img src="assets/shield.svg" alt="Secure" height="44">
+        <div><strong>100% Confidential • HIPAA‑friendly intake</strong><br><span style="color:#475569">Your information is protected and used only for scheduling.</span></div>
+      </div>
+      <div class="partners">
+        <div class="partner">Licensed Providers</div>
+        <div class="partner">5★ Patient Satisfaction</div>
+        <div class="partner">Local Clinics</div>
       </div>
     </div>
-    <div class="card form-card">
+    <div id="form" class="card form-card">
       <div class="pill">Check eligibility in 60 seconds</div>
       <div class="form-title">Book Your Free Consultation</div>
+      <!-- Embedded JotForm -->
       <script type="text/javascript" src="https://form.jotform.com/jsform/252354328738059"></script>
-      <div style="font-size:12px; color:#64748b; margin-top:10px;">
-        By submitting, you agree to be contacted about your consultation. Your information is secure.
-      </div>
+      <div style="font-size:12px; color:#64748b; margin-top:10px;">By submitting, you agree to be contacted about your consultation.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-3">
+    <div class="feature">
+      <div class="pill">Why it works</div>
+      <h3>Clinically Proven Relief</h3>
+      <p>Oral appliance therapy repositions the jaw to keep airways open during sleep. Comfortable and effective for many patients with OSA.</p>
+    </div>
+    <div class="feature">
+      <div class="pill">Comfort matters</div>
+      <h3>No Masks, No Hoses</h3>
+      <p>Compact device fits like a retainer. Easy to travel with, quiet, and simple to maintain—no power required.</p>
+    </div>
+    <div class="feature">
+      <div class="pill">Real support</div>
+      <h3>Doctor‑Led Care</h3>
+      <p>Evaluation, fitting, and follow‑up by licensed dental professionals to ensure a precise, comfortable fit.</p>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="grid-3">
-      <div class="feature">
-        <div class="pill">Why it works</div>
-        <h3>Clinically Proven Relief</h3>
-        <p>Oral appliance therapy repositions the jaw to keep airways open during sleep. Comfortable and effective for mild to moderate OSA.</p>
-      </div>
-      <div class="feature">
-        <div class="pill">Comfort matters</div>
-        <h3>No Masks, No Hoses</h3>
-        <p>Compact device fits like a retainer. Easy to travel with, quiet, and simple to maintain—no power required.</p>
-      </div>
-      <div class="feature">
-        <div class="pill">Real support</div>
-        <h3>Doctor-Led Care</h3>
-        <p>Evaluation, fitting, and follow-up by licensed dental professionals to ensure a precise, comfortable fit.</p>
-      </div>
+    <div class="seals">
+      <img src="assets/shield.svg" alt="Google Guaranteed style seal">
+      <img src="assets/shield.svg" alt="HIPAA‑friendly seal">
+      <img src="assets/shield.svg" alt="Licensed Provider seal">
     </div>
   </div>
 </section>
 
 <section class="section" style="padding-top:0;">
   <div class="container">
-    <div class="card" style="padding:24px;">
+    <div class="card" style="padding:22px;">
       <h3 style="margin:0 0 8px;">What Patients Say</h3>
       <p style="color:#475569; margin:0;">“I finally sleep through the night without a CPAP. The appliance is comfortable and discreet.” — <strong>Michael R.</strong></p>
     </div>
   </div>
 </section>
 
+<div class="cta-bar">
+  <span>Ready to see if you qualify?</span>
+  <a href="#form">Book Free Consultation</a>
+</div>
+
 <footer>
   <div class="container footgrid">
     <div>
-      <strong>SomniDental</strong> • Sleep Apnea Treatment Clinic<br/>
+      <strong>SomniDental</strong> • Sleep Apnea Treatment Clinic<br>
       <div class="legal">© 2025-08-25 SomniDental. All rights reserved.</div>
     </div>
     <div class="legal">
@@ -143,5 +117,7 @@
     </div>
   </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
