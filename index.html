@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sleep Apnea Consultation | GrowthMatrix</title>
+  <meta name="description" content="Check if you qualify for a free sleep apnea consultation. HIPAA-compliant, secure and no obligation.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="brand">GrowthMatrix</div>
+    <nav>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#form">Check Eligibility</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Check If You Qualify for a Free Sleep Apnea Consultation</h1>
+    <p>HIPAA-Compliant • Secure • No Obligation</p>
+    <a href="#form" class="btn">Start Free Screening</a>
+  </div>
+</section>
+
+<section id="form" class="section">
+  <div class="container">
+    <h2>Eligibility Form</h2>
+    <form id="leadForm">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+      <button type="submit">Check My Eligibility</button>
+    </form>
+    <p id="msg"></p>
+  </div>
+</section>
+
+<section id="why" class="section">
+  <div class="container grid cols-3">
+    <div class="card"><h3>Insurance Verification</h3><p>We check your plan benefits so you know your coverage.</p></div>
+    <div class="card"><h3>Qualified Providers</h3><p>Board-certified specialists and clinics nationwide.</p></div>
+    <div class="card"><h3>Modern Treatments</h3><p>Access to CPAP alternatives and the latest therapies.</p></div>
+  </div>
+</section>
+
+<section id="reviews" class="section">
+  <div class="container grid cols-2">
+    <div class="card">“GrowthMatrix helped us connect with qualified patients securely. Great results!”</div>
+    <div class="card">“The process was smooth and HIPAA-compliant. Patients trust the experience.”</div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="card"><b>Is my data secure?</b><br>Yes, we use encrypted connections and HIPAA-aware handling.</div>
+    <div class="card"><b>What happens after I submit?</b><br>A specialist will contact you to confirm eligibility and next steps.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© GrowthMatrix • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a></p>
+  </div>
+</footer>
+
+<script>
+const scriptURL = "YOUR_GOOGLE_SCRIPT_URL"; // Replace with Google Apps Script URL
+const form = document.getElementById("leadForm");
+const msg = document.getElementById("msg");
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(scriptURL, { method:"POST", body:new FormData(form)})
+    .then(res => { msg.textContent = "✅ Thank you! We'll contact you soon."; form.reset(); })
+    .catch(err => { msg.textContent = "❌ Error! Please try again."; });
+});
+</script>
+</body>
+</html>
