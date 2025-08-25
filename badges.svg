@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="120" viewBox="0 0 640 120">
+  <rect width="640" height="120" rx="16" fill="#ffffff" stroke="#e2e8f0"/>
+  <g font-family="Inter, system-ui" fill="#334155">
+    <text x="36" y="70" font-weight="700">Trusted by Local Patients</text>
+    <text x="320" y="70" font-weight="700">HIPAA‑Friendly Intake</text>
+    <text x="520" y="70" font-weight="700">Licensed Providers</text>
+  </g>
+</svg>
